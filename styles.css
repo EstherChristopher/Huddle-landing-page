@@ -10,6 +10,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.page-1 {
+  margin-top: 1.8rem;
+}
 .header {
   display: flex;
   position: relative;
@@ -36,34 +39,41 @@
   padding-right: 1rem;
 }
 .btn-1 {
-  font-size: 1.3rem;
-  padding: 10px 25px;
+  font-size: 1rem;
+  padding: 6px 25px;
   border-radius: 10rem;
   color: var(--pink-texts);
-  border: 3px solid var(--pink-texts);
+  border: 3px solid var(--light-pink-texts);
+  opacity: 0.5;
   background-color: white;
   position: absolute;
   bottom: 1vh;
+  /* margin-top: 10px; */
+}
+main {
+  margin-top: 8rem;
 }
 h1 {
+  font-size: 1.8rem;
   font-family: "Open Sans";
   text-align: center;
   color: var(--dark-cyan-texts);
 }
-
 .main-text {
   max-width: 60ch;
   text-align: center;
   margin: 0 auto;
   color: var(--dark-cyan-texts);
   font-family: "Open Sans";
+  margin-top: 1rem;
   margin-bottom: 2em;
+  font-size: 1rem;
 }
 .btn-2 {
   font-size: 1.2rem;
   font-family: "Open Sans";
   font-weight: 600;
-  padding: 1.3em 5em;
+  padding: 1em 4em;
   border-radius: 10rem;
   background: var(--pink-texts);
   border: 3px solid var(--pink-texts);
@@ -78,9 +88,9 @@ h1 {
   text-align: center;
 }
 .box {
-  width: 50vw;
+  width: 70vw;
   min-height: 10vh;
-  margin-top: 5em;
+  margin-top: 4em;
   object-fit: cover;
   overflow: hidden;
 }
@@ -96,7 +106,7 @@ h1 {
   position: absolute;
   left: 27%;
   margin-top: 4em;
-  width: 30px;
+  width: 25px;
   min-height: auto;
   margin-top: 2.9rem;
 }
@@ -107,7 +117,7 @@ h1 {
 .comm-number {
   color: var(--dark-cyan-texts);
   font-weight: 700;
-  font-size: 3.6em;
+  font-size: 3em;
   font-family: "Open Sans";
   position: absolute;
   left: 32%;
@@ -117,17 +127,19 @@ h1 {
 .comm-text {
   font-family: "Open Sans";
   color: var(--dark-cyan-texts);
+  font-size: 0.8em;
   position: absolute;
   left: 32%;
   transform: translate(-50%);
-  top: 10.5em;
+  top: 10em;
+  opacity: 0.6;
 }
 .message-parent {
   display: flex;
   position: relative;
 }
 .msg-icon1 {
-  width: 27px;
+  width: 24px;
   height: auto;
   position: absolute;
   right: 40%;
@@ -142,7 +154,7 @@ h1 {
   font-weight: 700;
   font-family: "Open Sans";
   color: var(--dark-cyan-texts);
-  font-size: 3.6em;
+  font-size: 3em;
   position: absolute;
   left: 64%;
   transform: translate(-50%);
@@ -152,9 +164,11 @@ h1 {
   font-family: "Open Sans";
   color: var(--dark-cyan-texts);
   position: absolute;
-  left: 63%;
+  left: 62.5%;
   transform: translate(-50%);
-  top: 10.5em;
+  top: 10em;
+  font-size: 0.8em;
+  opacity: 0.6;
 }
 .column {
   margin: 14rem auto;
@@ -169,6 +183,10 @@ h1 {
   display: block;
   width: 100%;
 }
+/* .adjusted-top {
+  position: relative;
+  top: -200px;
+} */
 .pattern-top-mobile,
 .pattern-bottom-mobile,
 .blue-bottom-mobile-2,
@@ -181,6 +199,9 @@ h1 {
   gap: 6rem;
   align-items: center;
   padding: 5rem;
+}
+.grow {
+margin-top: -200px;
 }
 .first,
 .third {
@@ -233,6 +254,7 @@ section p {
 }
 footer {
   margin-top: 10rem;
+  position: relative;
 }
 .navy-blue-footer-top {
   display: block;
@@ -242,6 +264,9 @@ footer {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg)
     brightness(103%) contrast(103%);
   margin-top: 3rem;
+}
+.first-grid {
+margin-left: 5rem;
 }
 .first-grid p, .phone-logo, img {
   color: hsl(0, 0%, 100%)
@@ -264,15 +289,21 @@ footer {
 }
 .email-section {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 1rem;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
 }
 .phone-logo {
   margin-top: 2rem;
 }
 .email-logo {
-  color: hsl(0, 0%, 100%)
+  color: hsl(0, 0%, 100%);
+  width: 14px;
+  height: 19px;
+  margin-top: 1.9rem;
+}
+.first-grid {
+
 }
 .footer-first {
   background-color: var(--dark-cyan-texts);
@@ -285,6 +316,9 @@ h3, p {
 }
 h3 {
   margin-top: 3.3rem;
+}
+.second-grid {
+  margin-right: 4.3rem;
 }
 .second-grid p {
   max-width: 41ch;
@@ -323,9 +357,13 @@ h3 {
   cursor: pointer;
   margin-bottom: -1.9rem;
 }
+.media-icons-parent {
+  display: flex;
+  justify-content: space-between;
+}
 .media-icons i {
   color: hsl(0, 0%, 100%);
-  margin-right: 3rem;
+  margin-right: 2rem;
   margin-top: 2.0rem;
   height: auto;
   font-size: 2.0rem;
@@ -338,9 +376,4 @@ display: flex;
 align-items: center;
 gap: 1rem;
 }
-/* .footer-first {
-  display: grid;
-  grid-template-columns: auto auto auto;
-} */
-/* DRY for comm-number and comm-text */
-/* Use media query for comm-number and msg-text*/
+
